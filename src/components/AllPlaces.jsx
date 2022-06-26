@@ -44,7 +44,7 @@ function AllPlaces() {
             return n[n.length - 1];
         }
         const properPlace = getLastWord(place);
-        setQuery(properPlace);
+        properPlace ? setQuery(properPlace) : setQuery(place)
     }
     //Reseting everything when user click on cross button
     function showChangeHandler() {
